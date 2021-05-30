@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
 import imageUrlBuilder from "@sanity/image-url";
-import plumeria from "../home.jpg";
+import image from "../home.jpg";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -28,7 +28,7 @@ export default function About() {
 
     return (
         <main className="relative">
-            <img src={plumeria} alt="fly high" className="absolute w-full" />
+            <img src={image} alt="fly high" className="absolute w-full" />
             <div className="p-10 lg:pt-48 container mx-auto relative">
                 <section className="bg-black-800 rounded-lg shadow-2xl lg:flex p-20">
                     <img
