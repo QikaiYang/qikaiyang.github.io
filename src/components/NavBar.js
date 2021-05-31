@@ -11,16 +11,20 @@ export default function NavBar() {
                         to="/"
                         exact
                         activeClassName="text-white"
-                        className="inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-blue-600 text-4xl font-bold tracking-widest"
+                        className="items-center py-6 px-3 mr-4 text-red-100 hover:text-blue-600 text-4xl tracking-widest"
                     >
-                        Qikai
+                        <img
+                            src={"./yang.png"}
+                            className="inline-flex items-center rounded w-12 h-12 lg:w-28 lg:h-28 mr-4"
+                            alt="Yang"
+                        />
                     </NavLink>
                     <NavLink
                         to="/post"
                         className="inline-flex items-center py-3 px-3 my-6 rounded text-red-100 hover:text-blue-600"
                         activeClassName="text-red-100 bg-black-800"
                     >
-                        Blog Posts
+                        Research
                     </NavLink>
                     <NavLink
                         to="/project"
