@@ -10,8 +10,7 @@ export default function NavBar() {
                     <NavLink
                         to="/"
                         exact
-                        activeClassName="text-white"
-                        className="items-center py-6 px-3 mr-4 text-red-100 hover:text-blue-600 text-4xl tracking-widest"
+                        className="inline-flex items-center py-6 px-1"
                     >
                         <img
                             src={"./yang.png"}
@@ -21,21 +20,28 @@ export default function NavBar() {
                     </NavLink>
                     <NavLink
                         to="/post"
-                        className="inline-flex items-center py-3 px-3 my-6 rounded text-red-100 hover:text-blue-600"
+                        className="inline-flex items-center py-6 px-3 my-4 rounded font-bold text-red-100 hover:text-blue-600"
                         activeClassName="text-red-100 bg-black-800"
                     >
                         Research
                     </NavLink>
                     <NavLink
                         to="/project"
-                        className="inline-flex items-center py-3 px-3 my-6 rounded text-red-100 hover:text-blue-600"
+                        className="inline-flex items-center py-6 px-3 my-4 rounded font-bold text-red-100 hover:text-blue-600"
                         activeClassName="text-red-100 bg-black-800"
                     >
                         Projects
                     </NavLink>
                     <NavLink
+                        to="/personal"
+                        className="inline-flex items-center py-6 px-3 my-4 rounded font-bold text-red-100 hover:text-blue-600"
+                        activeClassName="text-red-100 bg-black-800"
+                    >
+                        Personal
+                    </NavLink>
+                    <NavLink
                         to="/about"
-                        className="inline-flex items-center py-3 px-3 my-6 rounded text-red-100 hover:text-blue-600"
+                        className="inline-flex items-center py-6 px-3 my-4 rounded font-bold text-red-100 hover:text-blue-600"
                         activeClassName="text-red-100 bg-black-800"
                     >
                         About Me!

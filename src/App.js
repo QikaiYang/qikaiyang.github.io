@@ -6,6 +6,7 @@ import SinglePost from "./components/SinglePost";
 import Post from "./components/Post";
 import Project from "./components/Project";
 import NavBar from "./components/NavBar";
+import Personal from './components/Personal';
 
 function App() {
   return (
@@ -15,8 +16,10 @@ function App() {
         <Route component={Home} path='/' exact />
         <Route component={About} path='/about' />
         <Route component={SinglePost} path='/post/:slug' />
+        <Route component={SinglePost} path='/personal/:slug' />
         <Route component={Post} path='/post' />
         <Route component={Project} path='/project' />
+        <Route component={Personal} path='/personal' />
       </Switch>
     </BrowserRouter>
   )
